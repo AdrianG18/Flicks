@@ -15,6 +15,9 @@ public class Movie {
     private String posterPath; //only the path
     private String backdropPath;
 
+    // no-arg, empty constructor required for Parceler
+    public Movie() {}
+
     // initialize from JSON data
     public Movie(JSONObject object) throws JSONException {
         title = object.getString("title");
