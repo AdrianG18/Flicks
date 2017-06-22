@@ -118,8 +118,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
             tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
+            // add this as the itemView's OnClickListener
+            itemView.setOnClickListener(this);
         }
 
+        // shows MovieDetailsActivity when user clicks on row
         @Override
         public void onClick(View v) {
             // gets item position
