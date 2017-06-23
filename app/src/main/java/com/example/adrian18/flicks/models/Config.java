@@ -3,11 +3,15 @@ package com.example.adrian18.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
+
+
 
 /**
  * Created by adrian18 on 6/22/17.
  */
 
+//@Parcel // annotation indicates class is Parcelable
 public class Config {
 
     // the base url for loading images
@@ -29,7 +33,6 @@ public class Config {
         // parse the abckdrop sizes and use the option at index 1 or w780 as a fallback
         JSONArray backdropSizeOptions = images.getJSONArray("backdrop_sizes");
         backdropSize = backdropSizeOptions.optString(1,"w780");
-
     }
 
     // helper method for creating urls

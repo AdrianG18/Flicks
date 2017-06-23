@@ -10,7 +10,30 @@
         android:id="@+id/rvMovies"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:textColor="#3A5FCD"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_above="@+id/rvMovies"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/film" />
+    </FrameLayout>
 </RelativeLayout>

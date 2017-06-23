@@ -98,6 +98,12 @@ public class MovieListActivity extends AppCompatActivity {
         });
     }
 
+  /*private void getVideo() {
+        // create the url
+        String url = API_BASE_URL+ "/movie/" + movie.getId() +"/videos";
+    }
+    */
+
     // get the configuration from the API
     private void getConfiguration() {
         // create the url
