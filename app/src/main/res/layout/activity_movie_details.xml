@@ -7,7 +7,7 @@
     tools:context="com.example.adrian18.flicks.MovieDetailsActivity">
 
     <ImageView
-        android:id="@+id/ivTrailer"
+        android:id="@+id/ivPosterImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/flicks_backdrop_placeholder" />
