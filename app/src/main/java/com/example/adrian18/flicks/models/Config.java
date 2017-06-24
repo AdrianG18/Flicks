@@ -3,7 +3,6 @@ package com.example.adrian18.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.parceler.Parcel;
 
 
 
@@ -11,7 +10,6 @@ import org.parceler.Parcel;
  * Created by adrian18 on 6/22/17.
  */
 
-//@Parcel // annotation indicates class is Parcelable
 public class Config {
 
     // the base url for loading images

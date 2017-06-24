@@ -4,24 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     tools:context="com.example.adrian18.flicks.MovieDetailsActivity">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/ivTrailer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical"
-        android:layout_above="@+id/tvTitle">
-
-        <ImageView
-            android:id="@+id/ivTrailer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/flicks_backdrop_placeholder" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -30,9 +19,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="#3A5FCD" />
+        android:textColor="#4169e1" />
 
     <TextView
         android:id="@+id/tvRelease"
@@ -54,7 +44,7 @@
         android:layout_below="@+id/tvRelease"
         android:numStars="5"
         android:progressBackgroundTint="#DCDCDC"
-        android:progressTint="@android:color/holo_orange_light"
+        android:progressTint="#6495ed"
         android:stepSize="0.5" />
 
     <TextView
@@ -65,7 +55,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/rbVoteAverage"
         android:text="TextView"
-        android:textColor="@android:color/background_light" />
+        android:textColor="#6495ed" />
 
     <TextView
         android:id="@+id/tvDate"
@@ -74,6 +64,6 @@
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/tvRelease"
         android:text="TextView"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="#6495ed" />
 
 </RelativeLayout>
