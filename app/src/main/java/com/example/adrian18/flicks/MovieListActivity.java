@@ -121,6 +121,7 @@ public class MovieListActivity extends AppCompatActivity {
                     adapter.setConfig(config);
                     // get the now playing movie list
                     getNowPlaying();
+                    getNowPlaying();
 
                 } catch (JSONException e) {
                     logError("Failed parsing configuration", e, true);
